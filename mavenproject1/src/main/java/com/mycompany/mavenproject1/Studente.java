@@ -51,5 +51,10 @@ public boolean isMaggiorenne(){
     }
     return false;
 }
-
+public String getFullName(){
+    return this.nome+" "+ this.cognome;
+}
+public  String getEmail(){
+    return this.nome+"_"+this.cognome+"@gmail.com";
+}
 }
