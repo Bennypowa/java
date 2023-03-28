@@ -7,6 +7,7 @@ public class Studente {
     private Integer  matricola;
     private Integer anni;
     private Date d;
+    private double voti[];
 public String getNome() {
         return nome;
     }
@@ -31,9 +32,12 @@ public Integer getAnni() {
 public void setAnni(Integer anni) {
         this.anni = anni;
     }
-public Studente(String nome,String cognome){
-   this.nome=nome; 
-   this.cognome=cognome;
+    public Studente(String n,String c,Integer a, int m){
+     this.nome=n;
+     this.cognome=c;
+     this.anni=a;
+     this.matricola=m;    
+     this.voti= new double [100];
 }
 public Studente(){
 
@@ -57,4 +61,5 @@ public String getFullName(){
 public  String getEmail(){
     return this.nome+"_"+this.cognome+"@gmail.com";
 }
+
 }

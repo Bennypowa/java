@@ -10,6 +10,7 @@ public class classe {
 
  public void setnStudenti(Integer nStudenti) {
         this.nStudenti = nStudenti;
+        this.Studenti = new Studente[this.nStudenti];
     }
 
   public Studente[] getStudenti() {
@@ -17,7 +18,7 @@ public class classe {
     }
 
  public void setStudenti(Studente[] Studenti) {
-        this.Studenti = new Studente[this.nStudenti];
+       
     }
 
  public String getNome() {

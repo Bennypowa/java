@@ -6,13 +6,17 @@ public class Mavenproject1 {
         Scanner sc= new Scanner(System.in);
         Studente stu= new Studente();
         classe c= new classe();
+        System.out.println("inserire il numero di studenti nella classe: ");
+        c.setnStudenti(sc.nextInt());
+        for(int i=0; i<c.getnStudenti(); i++){
         System.out.println("inserire il nome: ");
         c.setNome(sc.nextLine());
         System.out.println("inserisci il nome dello studente");
         stu.setNome(sc.nextLine());
         System.out.println("inserisci il cognome dello studente");
         stu.setCognome(sc.nextLine());
-        stu.setAnni(17);
+        System.out.println("inserisci quanti anni ha: ");
+        stu.setAnni(sc.nextInt());
         if(stu.isMaggiorenne())
         {
             System.out.println("Lo studente "+stu.getNome()+" "+ stu.getCognome()+
@@ -26,4 +30,5 @@ public class Mavenproject1 {
         System.out.println(stu.getFullName());
         System.out.println(stu.getEmail());
     }
+      
 }
