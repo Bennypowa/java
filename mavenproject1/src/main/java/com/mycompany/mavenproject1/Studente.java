@@ -1,65 +1,81 @@
 package com.mycompany.mavenproject1;
 
 import java.util.Date;
-public class Studente {
+public class Studente 
+{
     private String nome;
     private String cognome;
-    private Integer  matricola;
+    private int  matricola;
     private Integer anni;
     private Date d;
     private double voti[];
-public String getNome() {
+    public String getNome() 
+    {
         return nome;
     }
-public void setNome(String nome) {
+    public void setNome(String nome) 
+    {
         this.nome = nome;
     }
-public String getCognome() {
+    public String getCognome() 
+    {
         return cognome;
     }
-public void setCognome(String cognome) {
+    public void setCognome(String cognome) 
+    {
         this.cognome = cognome;
     }
-public Integer getMatricola() {
+    public int getMatricola() 
+    {
         return matricola;
     }
-public void setMatricola(Integer matricola) {
+    public void setMatricola(int matricola) 
+    {
         this.matricola = matricola;
     }
-public Integer getAnni() {
+    public Integer getAnni() 
+    {
         return anni;
     }
-public void setAnni(Integer anni) {
+    public void setAnni(Integer anni) 
+    {
         this.anni = anni;
     }
-    public Studente(String n,String c,Integer a, int m){
-     this.nome=n;
-     this.cognome=c;
-     this.anni=a;
-     this.matricola=m;    
-     this.voti= new double [100];
-}
-public Studente(){
+        public Studente(String n,String c,Integer a, int m)
+    {
+        this.nome=n;
+        this.cognome=c;
+        this.anni=a;
+        this.matricola=m;    
+        this.voti= new double [100];
+    }
+    public Studente()
+    {
 
-}
-public Date getD() {
+    }
+    public Date getD() 
+    {
         return d;
     }
-public void setD(Date d) {
+    public void setD(Date d) 
+    {
         this.d = d;
     }
-public boolean isMaggiorenne(){
-    if (anni>=18)
+    public boolean isMaggiorenne()
     {
-            return true;
+        if (anni>=18)
+        {
+                return true;
+        }
+        return false;
     }
-    return false;
-}
-public String getFullName(){
-    return this.nome+" "+ this.cognome;
-}
-public  String getEmail(){
-    return this.nome+"_"+this.cognome+"@gmail.com";
-}
+    public String getFullName()
+    {
+        return this.nome+" "+ this.cognome;
+    }
+    public  String getEmail()
+    {
+        return this.nome+"_"+this.cognome+"@gmail.com";
+    }
 
 }
